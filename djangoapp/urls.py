@@ -8,13 +8,12 @@ from django.contrib.auth.views import LogoutView
 
 app_name = 'djangoapp'
 urlpatterns = [
-    # # path for registration
+    # path for registration
+    path('register/', views.registration, name='register'),
 
     # path for login
-     path(route='login', view=views.login_user, name='login'),
-     path('logout/', views.logout_request, name='logout'),
-    # path for dealer reviews view
+    path('login/', views.login_user, name='login'),
+    path('logout/', views.logout_request, name='logout'),
 
-    # path for add a review view
-
+    # other paths...
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
