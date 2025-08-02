@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dealers List</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Dealers</h1>
+        <ul>
+            {% for dealer in dealers %}
+                <li>{{ dealer.full_name }} - {{ dealer.city }}</li>
+            {% empty %}
+                <li>No dealers found.</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,7 +1,8 @@
 # Uncomment the imports below before you add the function code
 import requests
 import os
-from dotenv import load_dotenvload_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
 
 
 backend_url = os.getenv(

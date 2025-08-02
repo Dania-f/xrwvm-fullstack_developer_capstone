@@ -67,8 +67,11 @@ TEMPLATES = [
         'DIRS': [ 
             os.path.join(BASE_DIR,'frontend/static'),
             os.path.join(BASE_DIR, 'frontend/build'),
-            os.path.join(BASE_DIR, 'frontend/build/static')
+            os.path.join(BASE_DIR, 'frontend/build/static'),
+            os.path.join(BASE_DIR, 'djangoproj', 'templates'),
+            os.path.join(BASE_DIR, 'templates'),
         ],
+        
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
